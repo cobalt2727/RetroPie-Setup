@@ -374,15 +374,14 @@ function get_platform() {
                 if grep -q "NVIDIA Jetson Nano Developer Kit" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="jetson-nano" 
 
-                else if  grep -q "icosa" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                elif  grep -q "icosa" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="tegra-x1" 
-
                 else
-                case $architecture in
-                    i686|x86_64|amd64)
-                        __platform="x86"
-                        ;;
-                esac
+                    case $architecture in
+                        i686|x86_64|amd64)
+                            __platform="x86"
+                            ;;
+                    esac
                 fi
                 ;;
         esac
