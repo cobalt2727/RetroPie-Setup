@@ -374,7 +374,8 @@ function get_platform() {
                 if grep -q "NVIDIA Jetson Nano Developer Kit" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="jetson-nano" 
 
-                else
+                else if  grep -q "icosa" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                    __platform="tegra-x1" 
 
 
                 case $architecture in
@@ -480,6 +481,14 @@ function platform_jetson-nano() {
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
     __default_makeflags="-j2"
+}
+
+function platform_tegra-x1() {
+    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a57 -mtune=cortex-a57"
+    __platform_flags="aarch64 x11 gl"
+    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
+    __default_asflags=""
+    __default_makeflags="-j4"
 }
 
 function platform_tinker() {
