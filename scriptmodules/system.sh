@@ -377,7 +377,7 @@ function get_platform() {
                 else if  grep -q "icosa" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="tegra-x1" 
 
-
+                else
                 case $architecture in
                     i686|x86_64|amd64)
                         __platform="x86"
