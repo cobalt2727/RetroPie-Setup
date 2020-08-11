@@ -16,11 +16,11 @@ sudo apt-get dist-upgrade
 sudo apt-get install git
 ```
 
-Then you can download the latest RetroPie setup script with:
+Then you can download the latest RetroPie setup script (for Switch and Tegra X1 Dev Boards) with:
 
 ```shell
 cd
-git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+git clone --depth=1 https://github.com/theofficialgman/RetroPie-Setup.git
 ```
 
 The script is executed with:
