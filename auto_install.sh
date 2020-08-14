@@ -1,6 +1,7 @@
 #download git
 sudo apt-get --assume-yes install git
 cd
+sudo rm -rf RetroPie-Setup
 git clone --depth=1 https://github.com/theofficialgman/RetroPie-Setup.git
 
 #auto install retropie with most important emulators (which don't take up much space)
