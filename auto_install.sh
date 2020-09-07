@@ -12,6 +12,7 @@ sudo ./retropie_packages.sh retroarch
 sudo ./retropie_packages.sh emulationstation
 sudo ./retropie_packages.sh retropiemenu
 sudo ./retropie_packages.sh runcommand
+sudo ./retropie_packages.sh ports-enable configure
 sudo ./retropie_packages.sh lr-mupen64plus-next
 sudo ./retropie_packages.sh lr-atari800
 sudo ./retropie_packages.sh lr-beetle-ngp
