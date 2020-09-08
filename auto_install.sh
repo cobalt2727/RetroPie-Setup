@@ -23,7 +23,7 @@ sudo ./retropie_packages.sh lr-fceumm
 sudo ./retropie_packages.sh lr-gambatte
 sudo ./retropie_packages.sh lr-genesis-plus-gx
 sudo ./retropie_packages.sh lr-handy
-sudo ./retropie_packages.sh lr-mame2003
+# sudo ./retropie_packages.sh lr-mame2003
 sudo ./retropie_packages.sh lr-mgba
 sudo ./retropie_packages.sh lr-nestopia
 sudo ./retropie_packages.sh lr-prosystem
@@ -33,15 +33,15 @@ sudo ./retropie_packages.sh lr-vba-next
 sudo ./retropie_packages.sh lr-vecx
 sudo ./retropie_packages.sh lr-bsnes
 sudo ./retropie_packages.sh lr-flycast
-sudo ./retropie_packages.sh lr-mame2016
-sudo ./retropie_packages.sh lr-mame2010
+# sudo ./retropie_packages.sh lr-mame2016
+# sudo ./retropie_packages.sh lr-mame2010
 sudo ./retropie_packages.sh lr-mame
 sudo ./retropie_packages.sh lr-pcsx-rearmed
 sudo ./retropie_packages.sh lr-ppsspp
 sudo ./retropie_packages.sh lr-snex9x
 sudo ./retropie_packages.sh lzdoom
-sudo ./retropie_packages.sh scraper
-sudo ./retropie_packages.sh skyscraper
+# sudo ./retropie_packages.sh scraper
+# sudo ./retropie_packages.sh skyscraper
 #sudo ./retropie_packages.sh usbromservice
 if dpkg -s libsdl2-dev | grep -q "2.0.10+5"; then
 echo ""
