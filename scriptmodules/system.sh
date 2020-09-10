@@ -491,7 +491,7 @@ function platform_jetson-nano() {
 function platform_tegra-x1() {
     __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a57 -mtune=cortex-a57"
     __platform_flags="aarch64 x11 gl"
-    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
+    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations -ffast-math -fPIE"
     __default_asflags=""
     __default_makeflags="-j4"
 }
